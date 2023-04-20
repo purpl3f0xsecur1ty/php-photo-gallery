@@ -1,0 +1,70 @@
+<body style="background-color:black">
+<meta charset="UTF-8">
+<title>
+Commissions~!
+</title>
+
+<style>
+h1 {
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  color: LightGray;
+  text-decoration: underline
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #782fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(63, 54, 80);
+}
+</style>
+
+<div id="rick-hidden" class="rick-hidden">
+    <center>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+        <button class="button" onclick="Function()">Click here to open the form</button>
+    <br>
+    <br>
+    <br>
+    <img src="/img/ZephyHappy.png" />
+    </center>
+</div>
+
+<div id="rick" class="rick" style="display: none">
+    <h1><center>&#129418; There is no commission form &#129418;</center></h1> <br> <br>
+
+    <center><img src="/img/rick.gif" /></center> <br> <br>
+
+    <h1><center>&#129418; April Fool~! &#129418;</center></h1>
+</div>
+
+
+<script src="howler.js"></script>
+<script>
+var roll = new Howl({
+    src: ['/img/roll_snes.mp3'],
+    volume: 1,
+    loop: true
+});
+function Function() {
+    var x = document.getElementById("rick-hidden");
+    x.style.display = "none";
+    var y = document.getElementById("rick");
+    y.style.display = "block";
+    roll.play()
+    document.title = "~* Get RickRolled Noob *~";
+}
+
+</script>
+
+</body>
